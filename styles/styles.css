@@ -1,0 +1,10 @@
+label {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.submit {
+    background-color: red;
+    display: block;
+}
