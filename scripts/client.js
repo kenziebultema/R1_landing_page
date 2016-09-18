@@ -11,7 +11,6 @@ $(document).ready(function(){
 
     function takeValues(event){
         event.preventDefault();
-        console.log('submit button works');
 
         var values = {};
 
@@ -21,15 +20,12 @@ $(document).ready(function(){
         var s = document.getElementById('state');
         var state = s.options[s.selectedIndex].text;
 
-        console.log(country);
-
         $.each($('.form').serializeArray(), function(i, field){
             values[field.name] = field.value;
             values.country = country;
             values.state = state;
         });
 
-        console.log(values);
         printValues(values);
     }
 
