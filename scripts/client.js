@@ -37,12 +37,12 @@ $(document).ready(function(){
         $('.info-container').append('<span class="form-info col-lg-12 col-md-12 col-sm-12 col-xs-12"></span>');
         var $el = $('.info-container').children().last();
 
-        $el.append('<p>Name: ' + values.first_name + ' ' + values.last_name + '</p>');
-        $el.append('<p>Email Address: ' + values.email_address + '</p>');
-        $el.append('<p>Company: ' + values.company + '</p>');
-        $el.append('<p>Title: ' + values.title + '</p>');
-        $el.append('<p>Country: ' + values.country + '</p>');
-        $el.append('<p>State: ' + values.state + '</p>');
-        $el.append('<p>Additional Comments: ' + values.comments + '</p>');
+        $el.append('<h5>Name:</h5><p> ' + values.first_name + ' ' + values.last_name + '</p>');
+        $el.append('<h5>Email Address:</h5><p> ' + values.email_address + '</p>');
+        $el.append('<h5>Company:</h5><p> ' + values.company + '</p>');
+        $el.append('<h5>Title:</h5><p> ' + values.title + '</p>');
+        $el.append('<h5>Country:</h5><p> ' + values.country + '</p>');
+        $el.append('<h5>State:</h5><p> ' + values.state + '</p>');
+        $el.append('<h5>Additional Comments:</h5><p> ' + values.comments + '</p>');
     }
 });
