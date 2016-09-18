@@ -7,6 +7,7 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
 
     <!-- SCRIPTS -->
@@ -18,56 +19,53 @@
 </head>
 <body>
 <div class="container">
-    <img class="img" src="../images/R1_Logo_Horizontal.png" alt="The Relationship One company logo."/>
+    <img class="img img-responsive logo-img" src="../images/R1_Logo_Horizontal.png" alt="The Relationship One company logo."/>
 
     <div class="row">
-        <img class="col-lg-12" src="../images/laundrybanner.jpg" alt="Image of a persons legs sticking out of a washing machine."/>
+        <img class="col-lg-12 img img-responsive" src="../images/laundrybanner.jpg" alt="Image of a persons legs sticking out of a washing machine."/>
         <!-- </div> -->
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 text-area">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed turpis orci. Curabitur sollicitudin, metus eget laoreet tincidunt, ex mi imperdiet orci, sed tristique leo leo nec ipsum. Duis eu odio finibus, molestie eros non, pulvinar mauris. Nullam in ante imperdiet, finibus nibh quis, cursus nibh. Nunc varius faucibus justo, nec ullamcorper dolor. Nullam maximus diam turpis, eu iaculis urna blandit id. Aliquam quis viverra enim. In hac habitasse platea dictumst.</p>
 
             <p>Vestibulum lobortis sem blandit dui pharetra, sit amet cursus magna interdum. Phasellus lobortis est vel risus dictum accumsan nec id felis. Etiam ut iaculis erat, id fermentum mi. Etiam gravida orci vel ipsum sollicitudin gravida. Nullam eget faucibus tortor. Quisque sollicitudin diam ipsum. Suspendisse tristique tellus id diam vehicula, sit amet interdum quam maximus. Praesent dui enim, tempor ut semper quis, euismod non tellus. Nullam nec ex id orci rhoncus bibendum.</p>
 
             <p>Vivamus vitae orci lectus. Mauris leo velit, ornare at aliquet at, pretium et nisi. Vivamus auctor dui quis velit facilisis rutrum. Ut auctor volutpat sodales. Etiam non ornare orci. Phasellus at augue at tellus tempus lacinia. Sed sed nibh nec mi congue molestie. Integer in consectetur ante.</p>
+
         </div>
 
-        <form class="col-lg-6 text-center">
-            <h2>Form</h2>
+        <form class="col-lg-6 text-center form">
+            <h2><u>Form</u></h2>
             <label for="first_name">First Name</label>
-            <input type="text" name="first_name" class="first_name"/>
+            <input type="text" name="first_name" class="first-name form-control"/>
 
             <label for="last_name">Last Name</label>
-            <input type="text" name="last_name" class="last_name"/>
+            <input type="text" name="last_name" class="last-name form-control"/>
 
-            <label for="email">Email Address</label>
-            <input type="text" name="email" class="email"/>
+            <label for="email_address">Email Address</label>
+            <input type="text" name="email_address" class="email-address form-control"/>
 
             <label for="company">Company</label>
-            <input type="text" name="company" class="company"/>
+            <input type="text" name="company" class="company form-control"/>
 
             <label for="title">Title</label>
-            <input type="text" name="title" class="title"/>
+            <input type="text" name="title" class="title form-control"/>
 
             <label for="country">Country</label>
-            <select class="country bfh-countries">
-            </select>
+            <select id="country" class="form-control bfh-countries country" ></select>
 
-            <div class="hidden">
-                <label for="state">State</label>
-                <input type="text" name="state" class="state"/>
-            </div>
-
+            <label for="state">State *U.S. Only</label>
+            <select id="state" class="form-control bfh-states" data-country="US"></select>
 
             <label for="comments">Additional Comments</label>
-            <input type="text" name="comments" class="comments"/>
+            <input type="text" name="comments" class="comments form-control"/>
 
-            <input type="submit" value="Submit" class="submit btn text-center" />
+            <input type="submit" value="Submit" class="btn btn-primary btn-lg btn-block" />
         </form>
     </div>
 
     <div class="row">
-        <p class="col-lg-6 col-lg-offset-3">
+        <p class="info-container">
 
         </p>
     </div>
